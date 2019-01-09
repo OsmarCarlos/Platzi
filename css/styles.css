@@ -1,0 +1,16 @@
+/* selector de etiquerta 
+header {
+    background: rebeccapurple
+}
+selector descendente 
+body header div nav ol li a {
+    background: red
+} 
+selector de clase 
+.link {
+    background: blue
+}
+selector de id
+#id {
+    background: blue
+} */

@@ -1,0 +1,39 @@
+También recordar que existen varios tipos de selectores:
+1. Selector de etiqueta: refiere a etiquetas HTML, como el ejemplo de la imagen.
+2. Selector descendiente: refiere a etiquetas HTML de forma hereditaria.
+3. Selector de id: refiere a atributos id de etiquetas HTML.
+4. Selector de class (clase): refiere a atributos class de etiquetas 
+
+Selector de etiqueta: selecciona únicamente la etiqueta que escribimos.
+Ej:
+
+/*si ponemos el siguiente código*/
+a {
+color: blue;
+}
+/*Nos aplicará un color azul a todas las etiquetas de ancla en el documento HTML*/
+Selector descendente: Ej:
+
+bodyheaderdivnavolli a{
+	color: green;
+}
+/*nos aplicará el estilo únicamente a las etiquetas de ancla (<a>) que estén dentro de <li>*/
+Selector de Id: selecciona únicamente el elemento con ese id
+Ej:
+
+/*supongamos que tenemos una etiqueta de párrafo con la id "parrafo1"...*/
+
+#parrafo1{
+	color: blue;
+}
+
+/*Nos aplicará el estilo únicamente a ese párrafo con id "parrafo1", PD las id son únicas no puedes poner una misma id en dos etiquetas distintas*/
+Selector de clase: Este selector aplicará los estilos a todas las etiquetas con la misma clase independientemente de su Id o tipo de etiqueta.
+
+Ej:
+supongamos que tenemos una etiqueta de ancla (<a>), una de párrafo (<p>) y una de titulo 2 (<h2>) con la clase “importante”…
+
+.importante {
+	color: pink;
+}
+Este código pondrá de color rosado el texto de las etiquetas con esta clase, en este ejemplo estas son: (<a>), (<p>) y (<h2>).
