@@ -37,3 +37,36 @@ supongamos que tenemos una etiqueta de ancla (<a>), una de párrafo (<p>) y una 
 	color: pink;
 }
 Este código pondrá de color rosado el texto de las etiquetas con esta clase, en este ejemplo estas son: (<a>), (<p>) y (<h2>).
+
+https://www.keycdn.com/blog/oocss
+http://getbem.com/naming/
+https://www.sitepoint.com/introducing-ccss-component-css/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+Hay varias unidades de medida con las que se puede trabajar en CSS: %, em, rem, px, pt, fr, vw, vh
+Las medidas más comunes y utilizadas son los pixeles. Un pixel es la menor unidad homogénea en color que forma parte de una imagen digital. Es la unidad más práctica y fácil de utilizar y manipular, y es la que utilizaremos mayormente en este curso.
+
+Los colores en CSS pueden ser representados de al menos tres formas diferentes:
+
+Representados con palabras claves para cada color, como: red, green, blue, pink, yellow, black, etc.
+Usando la composición de tres colores (rojo, verde y azul): para esto podemos usar notación exadecimal o las funciones rgb() y rgba().
+Usando la composición mediante valores de Matiz, Saturación y Luminosidad con: hls() y hlsa().
+Con respecto a los valores hexadecimales, cada color está representado por 6 digitos, que representan 3 pares de hexadecimales: FF - FF - FF (rojo, verde y azul), en el que cada par puede tomar valores hexadecimales entre 00 y FF. Cada uno equivale a valores decimales entre 0 y 255, donde 0 es la ausencia de ese color y 255 la mayor cantidad disponible. De esta manera cada color se forma por la combinación de diferentes proporciones de rojo, verde y azul.
+
+#000000 es equivalente a Negro
+#FF0000 es equivalente a Rojo
+#00FF00 es equivalente a Verde
+#0000FF es equivalente a Azul
+#FFFFFF es equivalente a Blanco
+
+Además de todas las propiedades comunes que comparten los elementos estándar de html, como: display, position, margin, padding, top, left, right, bottom, border, etc., los elementos que admiten contenidos textuales aceptan una serie particular de propiedades entre las que se encuentran las siguientes:
+
+font-family: define el tipo de fuente aplicado al texto.
+color: define el colore del texto.
+line-height: define la altura desde la base del texto hasta la base de la siguiente línea de texto.
+font-size: define el tamaño del texto, admite cualquiera de las unidades de medida disponibles.
+letter-spacing: define el espaciado entre las letras del texto.
+font-weight: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
+text-decoration: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
+text-transform: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.

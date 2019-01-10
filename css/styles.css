@@ -14,3 +14,24 @@ selector de id
 #id {
     background: blue
 } */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    line-height: 1.5em;
+    font-size: 40px;
+    font-weight: normal;
+    /* font-style: italic; */
+    letter-spacing: -.2px;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}
+h1 strong {
+    color: blue;
+}
