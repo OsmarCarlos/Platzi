@@ -70,3 +70,24 @@ letter-spacing: define el espaciado entre las letras del texto.
 font-weight: define el ““peso”” de la letra, negrita, normal, light y normalmente se indica en múltiplos de 100 o usando keywords.
 text-decoration: define el decorado del texto como subrayado, tachado, con subrayado superior, etc.
 text-transform: permite transformar el estado de mayúsculas / minúsculas en el texto, usando uppercase para mayúsculas sostenidas, lowercase para minúsculas sostenidas, etc.
+
+Algunas de las propiedades de css relacionadas con la apariencia del fondo de los elementos son:
+
+background: con la que se puede indicar un color, o usada de manera extendida, puede incluir color de fondo, url de la imagen, posición y modo de repetición de la imagen.
+background-image: contiene la url que se usará como fondo del elemento.
+background-color: indica el color de fondo, se puede usar en combinación con la imagen.
+background-size: se puede indicar en valores de alto y ancho o en alguna de las palabras claves permitidas: cover o contain.
+background-position: indica la posición de la imagen dentro del elemento, puede indicarse en unidades o en palabras claves como center, left, top y right.
+background-repeat: indica el método de repetición de la imagen de fondo, puede ser: repeat, repeat-x, repeat-y o no-repeat.
+
+borders:
+http://www.siteraw.com/html-css/how-to-create-a-website/borders-shadows#borders
+
+Los márgenes en CSS son el espacio que separa a los elementos html entre sí. Hay elementos de html que traen márgenes predefinidos (poe defecto) en los estilos propios del navegador como el caso de: body, h1, h2, h3, h4, h5, h6, ol, ul, li, p, y muchos otros.
+
+Cuando hay dos márgenes de elementos diferentes que colindan entre sí, se presenta una situación llamada ““margin collapsing”” en la que el mayor margen de los dos se superpone al otro.
+
+Se puede asignar una medida de margin para los cuatro lados del elemento, o márgenes individuales para cada uno de los lados con: margin-top, margin-right, margin-bottom y margin-left.
+
+Se puede centrar un elemento html colocándole el valor de margin: 0 auto, cuando dicho elemento tiene display block.
+
