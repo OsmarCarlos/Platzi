@@ -23,11 +23,22 @@ celeste = #026fff
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+ol, ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +54,16 @@ h1 {
     text-transform: uppercase;
     /* text-decoration: underline; */
     color: white;
+    margin: 0;
+}
+
+h2 {
+    color: #026fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
 
 .hero strong {
@@ -57,6 +78,12 @@ h1 {
     background-position-x: right;
     background-color: #1b2127;
     color: white;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    height: inherit;
 }
 
 .header a {
@@ -64,8 +91,32 @@ h1 {
     text-decoration: none;
 }
 
+.header ol{
+    height: inherit;
+    display: inline-block;
+    align-items: center;
+}
+
+.header li {
+    height: inherit;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.header a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+figure {
+    margin: 0;
+}
+
 .portfolio {
     background-color: #fafafa;
+    padding: 20px;
 }
 
 .project {
@@ -76,10 +127,33 @@ h1 {
     border: 1px solid gray;
     border-radius: 10px;
     /* margin-bottom: 15px; */
-    margin: 10px;
+    /* margin: 10px; */
     margin-bottom: 15px;
     padding: 20px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .project-details {
@@ -89,3 +163,32 @@ h1 {
 .project-imageContainer {
     width: 500px;
 }
+
+.footer {
+    color: white;
+    background: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+/* .flexbox {
+   display: flex;
+   flex-wrap: wrap;  
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    flex-shrink: 0;
+    margin: 10px;
+} */
