@@ -83,3 +83,4 @@ Para centrar completamente los elementos internos de manera vertical y horizonta
 
 https://static.platzi.com/media/user_upload/css3-layout-53-638-438361d2-7aad-4504-9484-a37d00224a72.jpg
 
+<!-- <label for="email">Déjame tu email</label> -->
