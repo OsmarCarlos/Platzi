@@ -184,8 +184,8 @@ figure {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
@@ -313,13 +313,65 @@ figure {
     flex-wrap: inherit;
 }
 
+.html-video {
+    width: 100%;
+    height: auto;
+}
+
+.youtube {
+    /* width: 100%;
+    height: auto; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.flexible-video {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    background: blue;
+    position: relative;
+}
 /* Desktop First with MQ larger */
 
 @media screen and (max-width: 1024px){
+    .wrapper {
+        padding: 0 1em;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2em;
+        position: relative;
+        overflow: hidden;
+        text-shadow: 1px 2px 2px#000;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        z-index: 2
+    }
+
+    .hero-image {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+
     /* Resolutions under ipad */
     .header {
         display: block;
@@ -340,6 +392,8 @@ figure {
     .header ol li {
         height: 35px;
         display: block;
+        margin: 0;
+        margin-bottom: 15px;
     }
 
     .header a {
@@ -394,18 +448,69 @@ figure {
     .project-description {
         font-size: .8em;
     }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+    }
 }
 
 
 @media screen and (max-width: 480px){
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
     .project-details {
         width: auto;
         font-size: 12px;
     }
+
+    .event-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+
+    .contact {
+        display: block;
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .form-email button {
+        margin: 1em auto;
+    }
+
+    .form-email h3 {
+        margin-top: 0;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+
+    .wrapper {
+        padding: 0 .5em;
+    }
 }
 
 @media screen and (max-width: 320px){
-    
+
+    .hero {
+        padding: 2em 1em;
+    }
+
+    .hero h1 {
+        font-size: 1.2em;
+    }
 }
 
 /* .flexbox {

@@ -100,3 +100,16 @@ Con la propiedad box-sizing, y en particular con el valor border-box de esta pro
 
 Display Examples:
 https://i.stack.imgur.com/mGTYI.png
+
+CSS Positions
+
+static: es la propiedad por defecto.
+Con las otras opciones, se activan las propiedades de top, bottom, left, right y z-index.
+
+relative: el objeto se mueve en base al lugar donde se encuentra originalmente.
+absolute: el objeto se ubica de manera absoluta con el elemento más cercano que tenga posición relativa o con el body.
+fixed: El elemento se muestra de manera fija en el viewport.
+sticky: El elemento se queda de manera fija una vez que aparece en pantalla.
+
+Para calcular la proporción de nuestro vídeo:
+height * 100 / width
