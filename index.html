@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="wrapper">
             <figure class="logo">
@@ -23,7 +23,7 @@
                 </ol>
                 <ol>
                     <!-- <li><a href="https://linkedin.com/in/osmar-carlos-rodríguez-mejía-9ba526146" target="_blank">Experiencia</a></li> -->
-                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#eventos">Experiencia</a></li>
                 </ol>
                 <ol>
                     <!-- <li><a href="https://github.com/OsmarCarlos/chewie" target="_blank">Trajemos juntos</a></li> -->
@@ -79,9 +79,9 @@
     <div class="wrapper">
         <h2 class="event-main">Más sobre mi experiencia</h2>
     </div>
-    <div class="flexible-video">
+    <!-- <div class="flexible-video">
         <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    </div> -->
     <section id="eventos"class="event-list">
         <div class="wrapper">
             <article class="event">
@@ -170,5 +170,32 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menu =document.querySelector('.menu')
+        const burgerButton = document.querySelector('#burger-menu')
+        const ipad = window.matchMedia('screen and (max-width: 767px)')
+
+        ipad.addListener(validation)
+        if (ipad.matches) {
+            burgerButton.addEventListener('click', hide)
+        }
+
+        function validation(event) {
+            if (event.matches){
+                burgerButton.addEventListener('click', hide)
+            } else {
+                burgerButton.removeEventListener('click', hide)
+            }
+        }
+
+        function hide(){
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active')
+            }
+            else {
+                menu.classList.add('is-active')
+            }
+        }
+    </script>
 </body>
 </html>
